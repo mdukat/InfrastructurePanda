@@ -3,10 +3,11 @@ jenkins:
     local:
       users:
         - id: "panda"
-        password: "panda"
+          password: "panda"
+          name: "panda"
   authorizationStrategy:
     globalMatrix:
       permissions:
-        - "USER:Overall/Administer:panda"
+        - Overall/Administer:panda
   numExecutors: 0
 
