@@ -1,4 +1,13 @@
 jenkins:
+  credentials:
+    system:
+      domainCredentials:
+        - credentials:
+          - usernamePassword:
+            id: "artifactory"
+            username: "admin"
+            password: "password"
+            scope: GLOBAL
   securityRealm:
     local:
       users:
